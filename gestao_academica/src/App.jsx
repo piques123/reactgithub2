@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { useState, useRef } from 'react';
 import './App.css';
 
@@ -14,7 +14,7 @@ function App() {
   ]);
 
   return (
-    <BrowserRouter basename="/reactgithub2">
+    <HashRouter>
       <nav className="menu">
         <Link to="/cadastrar">Cadastrar</Link>
         <Link to="/alunos">Alunos</Link>
@@ -27,7 +27,7 @@ function App() {
         <Route path="/professores" element={<ListPage title="Professores" items={professores} columns={["id", "nome"]} />} />
         <Route path="*" element={<Home />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

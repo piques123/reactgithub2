@@ -2,6 +2,11 @@
   "name": "gestao_academica",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://piques123.github.io/reactgithub2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/piques123/reactgithub2.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
